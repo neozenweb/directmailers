@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Rubik;
+  font-weight: 400;
+  font-style: normal;
+  src: local(Rubik), local(Rubik), url('Rubik.woff2') format('woff2'),
+    url('Rubik.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Rubik;
+  font-weight: 400;
+  font-style: Light;
+  src: local(Rubik-Italic), local(Rubik-Italic),
+    url('Rubik-Italic.woff2') format('woff2'),
+    url('Rubik-Italic.woff') format('woff');
+  font-display: swap;
+}
