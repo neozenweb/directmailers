@@ -3,13 +3,20 @@ import Formol, { Field, Inliner } from 'formol/lib/formol';
 import Layout from '../components/layout';
 import { states } from '../components/fields';
 import 'formol/lib/default.css';
+import * as apidata from '../scripts/apidata.js';
 
 const onSubmit = ({ login, password }) => {
   return alert(login, password);
+
 };
 
 const homepage = () => {
+  
+  //Placeholder for the data from the api. Currently all the data is retrieved and displayed in the console.
+  console.log('data from apidata');
+  apidata.getAll();
   return (
+    
     <Layout>
       <h1>Are you getting your lowest payment?</h1>
       <p>
@@ -53,6 +60,10 @@ const homepage = () => {
       </Formol>
     </Layout>
   );
+  
+    
+ 
 };
+
 
 export default homepage;
